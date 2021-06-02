@@ -3,14 +3,7 @@
 
 using namespace std;
 
-
-void stampaArray(string arNamem[], int arLung[], int MAX){
-
-    cout << "--------------------------------------------" << endl;
-    for(int i=0;i<MAX;i++){
-        cout << "fiume " << arNamem[i] << " mt=" << arLung[i] << endl;
-    }
-}
+void stampaArray(string arNamem[], int arLung[], int MAX);
 
 int main()
 {
@@ -39,5 +32,13 @@ int main()
 
     stampaArray(arrayName,arrayLunghezza,MAX_ARRAY);
     return 0;
+}
+
+void stampaArray(string arNamem[], int arLung[], int MAX){
+
+    cout << "--------------------------------------------" << endl;
+    for(int i=0;i<MAX;i++){
+        cout << "fiume " << arNamem[i] << " mt=" << arLung[i] << endl;
+    }
 }
 
